@@ -12,12 +12,11 @@ Retail businesses often face challenges in understanding customer purchasing pat
 
 # *Data Source*
 I used web search tools to identify a suitable public dataset. The chosen one is the "Online Retail" dataset from the UCI Machine Learning Repository, which includes over 500,000 transaction records from 2010-2011. It's freely available and suitable for analyzing customer behavior.
-
-Source URL: https://archive.ics.uci.edu/dataset/352/online+retail
-Format: Excel (XLSX), but we'll convert to CSV for processing.
-Key Fields: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
-Size: Approximately 25MB, with 541,909 rows.
-License: Public domain, no restrictions for use.
+*  Source URL: https://archive.ics.uci.edu/dataset/352/online+retail
+*  Format: Excel (XLSX), but we'll convert to CSV for processing.
+*  Key Fields: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
+*  Size: Approximately 25MB, with 541,909 rows.
+*  License: Public domain, no restrictions for use.
 
 To access it programmatically, the code below downloads the ZIP file, extracts the XLSX, and converts it to CSV.
 
