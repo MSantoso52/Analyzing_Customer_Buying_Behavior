@@ -1,4 +1,4 @@
-# Data Engineering Project: Analyzing Customer Buying Behavior in Retail
+# Analyzing Customer Buying Behavior in Retail
 Building an end-to-end data pipeline for analyzing customer buying behavior using a public dataset on online retail transactions
 
 # *Project Overview*
