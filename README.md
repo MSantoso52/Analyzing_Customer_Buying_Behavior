@@ -29,7 +29,7 @@ To access it programmatically, the code below downloads the ZIP file, extracts t
 5.  Orchestration with Airflow: Define a DAG to schedule and orchestrate the ETL process.
 6.  Insights and Visualization: Query the data warehouse to generate insights (e.g., top products by revenue, customer purchase frequency) and visualize using    Matplotlib/Seaborn.
 
-Assumptions:
+# *Assumptions:*
 1.  Python environment with libraries: pandas, requests, zipfile, openpyxl, pandera, google-cloud-bigquery, apache-airflow.
 2.  GCP setup: BigQuery dataset retail_analysis and table transactions. Use a service account key JSON for authentication.
 3.  Run on a local machine or cloud VM; Airflow needs to be installed and running.
