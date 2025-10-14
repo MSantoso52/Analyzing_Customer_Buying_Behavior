@@ -1,5 +1,6 @@
 # Analyzing Customer Buying Behavior in Retail
 Building an end-to-end data pipeline for analyzing customer buying behavior using a public dataset on online retail transactions
+![Project Flow](screenshot/customer_analysis.png)
 
 # *Project Overview*
 This project focuses on building an end-to-end data pipeline for analyzing customer buying behavior using a public dataset on online retail transactions. The dataset captures invoice details, product descriptions, quantities, prices, and customer information from a UK-based online retailer.
