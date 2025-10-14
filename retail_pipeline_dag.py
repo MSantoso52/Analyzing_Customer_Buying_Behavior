@@ -106,7 +106,7 @@ def load_to_bigquery(project_id, dataset_id='retail_analysis', table_id='transac
     df = pd.read_csv(VALIDATED_FILE)
 
     # Set credential (NOTE: This should be configured via Airflow Secrets/Connections in production)
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/mulyo/Learning/bigquery/psychic-mason-473812-u3-ae4add80cbb0.json"
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/google_credential_path/google_credential.json"
 
     client = bigquery.Client(project=project_id)
 
