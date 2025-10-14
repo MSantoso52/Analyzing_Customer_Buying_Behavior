@@ -1,4 +1,4 @@
-CREATE TABLE `psychic-mason-473812-u3.retail_analysis.segmentation` AS
+CREATE TABLE `project_id.dataset.segmentation` AS
 WITH
 -- 1. Calculate the core R, F, M metrics for each customer
 RFM_Metrics AS (
@@ -6,7 +6,7 @@ RFM_Metrics AS (
         CustomerID,
         -- Recency (R): Days since last purchase
         DATE_DIFF(
-            (SELECT MAX(DATE(InvoiceDate)) FROM `psychic-mason-473812-u3.retail_analysis.transactions`),
+            (SELECT MAX(DATE(InvoiceDate)) FROM `project_id.dataset.transactions`),
             MAX(DATE(InvoiceDate)),
             DAY
         ) AS Recency,
@@ -15,7 +15,7 @@ RFM_Metrics AS (
         -- Monetary (M): Total spend
         SUM(TotalPrice) AS Monetary
     FROM
-        `psychic-mason-473812-u3.retail_analysis.transactions`
+        `project_id.dataset.transactions`
     WHERE
         CustomerID IS NOT NULL -- Exclude rows without a CustomerID
         AND Quantity > 0      -- Exclude cancelled or returned items

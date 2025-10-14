@@ -1,4 +1,4 @@
-CREATE TABLE `psychic-mason-473812-u3.retail_analysis.sales_trend` AS
+CREATE TABLE `projrct_id.dataset.sales_trend` AS
 WITH
 -- 4. Calculate Daily Sales Trend
 Daily_Sales_Trend AS (
@@ -6,7 +6,7 @@ Daily_Sales_Trend AS (
         DATE(InvoiceDate) AS SaleDate,
         SUM(TotalPrice) AS DailySales
     FROM
-        `psychic-mason-473812-u3.retail_analysis.transactions`
+        `project_id.dataset.transactions`
     WHERE
         Quantity > 0 AND TotalPrice > 0
     GROUP BY
