@@ -27,7 +27,7 @@ To access it programmatically, the code below downloads the ZIP file, extracts t
 3.  Data Validation: Use schema checks and business rules (e.g., ensure prices are positive, dates are valid) with libraries like Pandera.
 4.  Data Warehousing: Load cleaned data into Google BigQuery for scalable storage and querying. Assume a GCP project is set up with service account credentials.
 5.  Orchestration with Airflow: Define a DAG to schedule and orchestrate the ETL process.
-6.  Insights and Visualization: Query the data warehouse to generate insights (Customer segmentation & Sales trend) and visualize using Looker Studio. Using RFM (Recency, Frequency & Monetary) Analysis for Retail Customer Behavior. Looker Studio dashboard link: [Retail Customer Behavior]("https://lookerstudio.google.com/s/rBPrHZhI9xg")
+6.  Insights and Visualization: Query the data warehouse to generate insights (Customer segmentation & Sales trend) and visualize using Looker Studio. Using RFM (Recency, Frequency & Monetary) Analysis for Retail Customer Behavior. Looker Studio dashboard link: [Retail Customer Behavior](https://lookerstudio.google.com/s/rBPrHZhI9xg)
 
 # *Assumptions:*
 1.  Python environment with libraries: pandas, requests, zipfile, openpyxl, pandera, google-cloud-bigquery, apache-airflow.
